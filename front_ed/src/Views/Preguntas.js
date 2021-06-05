@@ -137,7 +137,7 @@ const Preguntas = () => {
         <Button onClick={() => Crear()}>Crear Pregunta</Button>
       </Form>
       <h1 className="mt-2">Preguntas</h1>
-      <ui>
+      <ul>
         {Preguntas.map((element, index) => (
           <li key={index}>
             Id:{element.id}, Titulo:{element.titulo}, Descripcion:
@@ -145,7 +145,7 @@ const Preguntas = () => {
             {element.respuesta ? " verdadera." : " falsa."}
           </li>
         ))}
-      </ui>
+      </ul>
     </Container>
   );
 };

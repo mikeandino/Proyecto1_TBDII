@@ -82,14 +82,14 @@ const Clases = () => {
         <Button onClick={() => Crear()}>Crear Clases</Button>
       </Form>
       <h1 className="mt-2">Clases</h1>
-      <ui>
+      <ul>
         {Clases.map((element, index) => (
           <li key={index}>
             ID:{element.id}, Nombre de la Clase:{element.nombreClase}
             {element.num_preguntas}
           </li>
         ))}
-      </ui>
+      </ul>
     </Container>
   );
 };

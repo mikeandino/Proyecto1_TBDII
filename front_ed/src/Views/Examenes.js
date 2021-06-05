@@ -99,14 +99,14 @@ const Examenes = () => {
         <Button onClick={() => Crear()}>Crear Examen</Button>
       </Form>
       <h1 className="mt-2">Examenes</h1>
-      <ui>
+      <ul>
         {Examenes.map((element, index) => (
           <li key={index}>
             Examen:{element.id}, Id de la Clase:{element.idClase}, Preguntas:
             {element.num_preguntas}
           </li>
         ))}
-      </ui>
+      </ul>
     </Container>
   );
 };
